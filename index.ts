@@ -1,12 +1,15 @@
-var title: string = 'Angular';
-title = 'ANGULAR !!';
+class Animaler {
+  age = 10;
+  constructor(public isCry: boolean) {}
 
-var n: number = 99;
-var isOpen: boolean = true;
+  crynow() {
+    if (this.isCry) {
+      console.log(`age : ${this.age}`);
+    } else {
+      console.log('ショボーン');
+    }
+  }
+}
 
-var keywords: (string | number)[] = ['name', 'email', 'body', 0];
-
-var paydata: [number, string, number] = [77, 'taro', 88];
-
-var obj: { [key: string]: string } = { name: 'sato', id: 'test' };
-
+let doger = new Animaler(false);
+doger.crynow();
